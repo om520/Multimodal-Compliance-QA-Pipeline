@@ -1,0 +1,33 @@
+clip_id,split,gt_pass_fail,gt_violation_category,pred_pass_fail,pred_audit_score,pred_violation_categories,pred_severity_max,num_issues,pipeline_errors,latency_seconds
+clip_001,train,FAIL,FTC Disclosure,FAIL,60.0,FTC Disclosure,critical,1,,0.00
+clip_002,train,FAIL,FTC Disclosure,FAIL,60.0,FTC Disclosure,critical,1,,0.00
+clip_003,train,FAIL,FTC Disclosure,FAIL,60.0,FTC Disclosure,warning,1,,0.00
+clip_004,train,PASS,FTC Disclosure,PASS,95.0,,none,0,,0.00
+clip_005,train,PASS,FTC Disclosure,PASS,95.0,,none,0,,0.00
+clip_006,train,FAIL,Claim Substantiation,FAIL,60.0,Claim Substantiation,critical,1,,0.00
+clip_007,train,FAIL,Claim Substantiation,FAIL,60.0,Claim Substantiation,critical,1,,0.00
+clip_008,train,FAIL,Claim Substantiation,FAIL,60.0,Claim Substantiation,warning,1,,0.00
+clip_009,train,FAIL,Claim Substantiation,FAIL,60.0,Claim Substantiation,warning,1,,0.00
+clip_010,train,PASS,Claim Substantiation,PASS,95.0,,none,0,,0.00
+clip_011,train,PASS,Claim Substantiation,PASS,95.0,,none,0,,0.00
+clip_012,train,FAIL,Brand Safety,FAIL,60.0,Brand Safety,critical,1,,0.00
+clip_013,train,FAIL,Brand Safety,FAIL,60.0,Brand Safety,critical,1,,0.00
+clip_014,train,FAIL,Brand Safety,FAIL,60.0,Brand Safety,warning,1,,0.00
+clip_015,train,FAIL,Brand Safety,FAIL,60.0,Brand Safety,warning,1,,0.00
+clip_016,train,PASS,Brand Safety,PASS,95.0,,none,0,,0.00
+clip_017,train,PASS,Brand Safety,PASS,95.0,,none,0,,0.00
+clip_018,train,FAIL,Ad Specs,FAIL,60.0,Ad Specs,critical,1,,0.00
+clip_019,train,FAIL,Ad Specs,PASS,88.0,,none,0,,0.00
+clip_020,train,FAIL,Ad Specs,FAIL,60.0,Ad Specs,warning,1,,0.00
+clip_021,train,FAIL,Ad Specs,FAIL,60.0,Ad Specs,warning,1,,0.00
+clip_022,train,PASS,Ad Specs,PASS,95.0,,none,0,,0.00
+clip_023,train,PASS,Ad Specs,FAIL,72.0,FTC Disclosure,warning,1,,0.00
+clip_024,train,FAIL,FTC Disclosure,FAIL,60.0,FTC Disclosure,critical,1,,0.00
+clip_025,holdout,FAIL,Claim Substantiation,FAIL,60.0,Claim Substantiation,critical,1,,0.00
+clip_026,holdout,PASS,FTC Disclosure,PASS,95.0,,none,0,,0.00
+clip_027,holdout,FAIL,Brand Safety,PASS,88.0,,none,0,,0.00
+clip_028,holdout,PASS,Claim Substantiation,PASS,95.0,,none,0,,0.00
+clip_029,holdout,FAIL,Ad Specs,FAIL,60.0,Ad Specs,critical,1,,0.00
+clip_030,holdout,PASS,Brand Safety,PASS,95.0,,none,0,,0.00
+clip_031,holdout,FAIL,FTC Disclosure,FAIL,60.0,FTC Disclosure,warning,1,,0.00
+clip_032,holdout,PASS,Ad Specs,PASS,95.0,,none,0,,0.00

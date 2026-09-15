@@ -1,0 +1,33 @@
+clip_id,video_url,gt_pass_fail,gt_violation_category,gt_severity,gt_notes,split
+clip_001,SYNTHETIC,FAIL,FTC Disclosure,critical,"Influencer promotes brand without any #ad or #sponsored tag. Classic FTC violation.",train
+clip_002,SYNTHETIC,FAIL,FTC Disclosure,critical,"Paid partnership label appears for only 1 second in small font at bottom of screen.",train
+clip_003,SYNTHETIC,FAIL,FTC Disclosure,warning,"Verbal disclosure only at very end of 3-minute video. FTC requires conspicuous early disclosure.",train
+clip_004,SYNTHETIC,PASS,FTC Disclosure,info,"Clear #ad label in title + verbal disclosure within first 5 seconds. Fully compliant.",train
+clip_005,SYNTHETIC,PASS,FTC Disclosure,info,"Creator explicitly says paid partnership with Brand at the start.",train
+clip_006,SYNTHETIC,FAIL,Claim Substantiation,critical,"Claims product cures diabetes without any clinical citation or disclaimer.",train
+clip_007,SYNTHETIC,FAIL,Claim Substantiation,critical,"States 10x faster than competitors with no study data or asterisk to source.",train
+clip_008,SYNTHETIC,FAIL,Claim Substantiation,warning,"Says most doctors recommend with no source referenced.",train
+clip_009,SYNTHETIC,FAIL,Claim Substantiation,warning,"Uses superlative best on the market without any supporting evidence.",train
+clip_010,SYNTHETIC,PASS,Claim Substantiation,info,"All performance claims include on-screen disclaimer citing internal study with sample size.",train
+clip_011,SYNTHETIC,PASS,Claim Substantiation,info,"Qualitative claims only e.g. feels great. No quantitative unsubstantiated assertions.",train
+clip_012,SYNTHETIC,FAIL,Brand Safety,critical,"Background shows competitor logo prominently visible throughout product demo.",train
+clip_013,SYNTHETIC,FAIL,Brand Safety,critical,"Creator uses profanity and slurs while wearing brand merchandise.",train
+clip_014,SYNTHETIC,FAIL,Brand Safety,warning,"Video background includes alcohol and drug paraphernalia near sponsored product.",train
+clip_015,SYNTHETIC,FAIL,Brand Safety,warning,"Creator makes politically divisive statement while holding branded product.",train
+clip_016,SYNTHETIC,PASS,Brand Safety,info,"Clean well-lit product demo. No reputational risk content.",train
+clip_017,SYNTHETIC,PASS,Brand Safety,info,"Aspirational lifestyle content with brand placement. No harmful elements.",train
+clip_018,SYNTHETIC,FAIL,Ad Specs,critical,"YouTube ad uses 4:3 aspect ratio. Platform requires 16:9 or vertical 9:16.",train
+clip_019,SYNTHETIC,FAIL,Ad Specs,critical,"Video duration is 32 seconds for a pre-roll slot requiring 15 or 30 seconds exactly.",train
+clip_020,SYNTHETIC,FAIL,Ad Specs,warning,"On-screen text is smaller than 30pt and not readable on mobile per YouTube ad spec.",train
+clip_021,SYNTHETIC,FAIL,Ad Specs,warning,"CTA button overlaps safe zone boundary in the bottom 20% of frame.",train
+clip_022,SYNTHETIC,PASS,Ad Specs,info,"16:9 1080p video 30-second duration text in safe zones. Fully spec compliant.",train
+clip_023,SYNTHETIC,PASS,Ad Specs,info,"YouTube Shorts vertical format 9:16. Duration 58 seconds. Within spec.",train
+clip_024,SYNTHETIC,FAIL,FTC Disclosure,critical,"Instagram story ad with no disclosure. Only a small heart emoji not an acceptable disclosure.",train
+clip_025,SYNTHETIC,FAIL,Claim Substantiation,critical,"Claims product burns 500 calories per session with no scientific citation.",holdout
+clip_026,SYNTHETIC,PASS,FTC Disclosure,info,"#ad and #sponsored in first line of caption. Verbal disclosure at 0:03.",holdout
+clip_027,SYNTHETIC,FAIL,Brand Safety,warning,"Product shown next to painkiller pills associating brand with medication context.",holdout
+clip_028,SYNTHETIC,PASS,Claim Substantiation,info,"All claims prefaced with In my personal experience. Subjective framing not substantiation issue.",holdout
+clip_029,SYNTHETIC,FAIL,Ad Specs,critical,"Audio levels exceed -14 LUFS loudness standard for YouTube ads causing automated rejection.",holdout
+clip_030,SYNTHETIC,PASS,Brand Safety,info,"Vegan brand placed in video about healthy meal prep. No brand safety issues.",holdout
+clip_031,SYNTHETIC,FAIL,FTC Disclosure,warning,"Disclosure buried after 30 hashtags at end of caption. Not conspicuous per FTC guidelines.",holdout
+clip_032,SYNTHETIC,PASS,Ad Specs,info,"6-second bumper ad. 16:9. All logos within safe zones. Spec-compliant.",holdout

@@ -1,0 +1,98 @@
+{
+  "train": {
+    "accuracy": 0.9167,
+    "n": 24,
+    "confusion_matrix": {
+      "TP": 15,
+      "FP": 1,
+      "TN": 7,
+      "FN": 1
+    },
+    "per_category": {
+      "Ad Specs": {
+        "TP": 3,
+        "FP": 0,
+        "FN": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "support": 4
+      },
+      "Brand Safety": {
+        "TP": 4,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "Claim Substantiation": {
+        "TP": 4,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "FTC Disclosure": {
+        "TP": 4,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889,
+        "support": 4
+      }
+    }
+  },
+  "holdout": {
+    "accuracy": 0.875,
+    "n": 8,
+    "confusion_matrix": {
+      "TP": 3,
+      "FP": 0,
+      "TN": 4,
+      "FN": 1
+    },
+    "per_category": {
+      "Ad Specs": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "Brand Safety": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "Claim Substantiation": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "FTC Disclosure": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      }
+    }
+  }
+}
