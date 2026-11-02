@@ -1,0 +1,96 @@
+{
+  "5-Habits-That-SnapYT.App": {
+    "video_name": "5-Habits-That-SnapYT.App.mp4",
+    "title": "5 Habits That Remodel Your Face",
+    "duration_seconds": 626.7666666666667,
+    "transcript_char_count": 11740,
+    "transcript_line_count": 110,
+    "transcript_time_s": 71.4,
+    "ocr_char_count": 12909,
+    "ocr_line_count": 312,
+    "ocr_time_s": 206.1,
+    "verification_score_pct": 100.0,
+    "phrase_matches": {
+      "biggest lie I've ever heard was that your looks are purely genetics": true,
+      "myofunctional therapy": true,
+      "Mewing": true,
+      "roof of your mouth": true,
+      "Wolf's law": true,
+      "Chewing": true,
+      "masseter": true,
+      "20 times": true,
+      "Swallowing": true,
+      "Breathing": true,
+      "Posture": true
+    }
+  },
+  "The-Game-Changing-Method-SnapYT.App": {
+    "video_name": "The-Game-Changing-Method-SnapYT.App.mp4",
+    "title": "The Game-Changing Method To FIX Uneven Hips",
+    "duration_seconds": 883.3666666666667,
+    "transcript_char_count": 19692,
+    "transcript_line_count": 183,
+    "transcript_time_s": 133.8,
+    "ocr_char_count": 1274,
+    "ocr_line_count": 50,
+    "ocr_time_s": 35.6,
+    "verification_score_pct": 77.8,
+    "phrase_matches": {
+      "uneven hips": true,
+      "midstance": false,
+      "gait cycle": false,
+      "Neck rotation": true,
+      "Shoulder abduction": true,
+      "Pelvis rotation": true,
+      "Side Plank": true,
+      "Adductor": true,
+      "Glute": true
+    }
+  },
+  "These-3-Bones-SnapYT.App": {
+    "video_name": "These-3-Bones-SnapYT.App.mp4",
+    "title": "These 3 Bones (Facial Anatomy & Development)",
+    "duration_seconds": 1165.8333333333333,
+    "transcript_char_count": 18291,
+    "transcript_line_count": 171,
+    "transcript_time_s": 132.1,
+    "ocr_char_count": 9063,
+    "ocr_line_count": 384,
+    "ocr_time_s": 76.8,
+    "verification_score_pct": 66.7,
+    "phrase_matches": {
+      "22 separate bones": false,
+      "sutures": true,
+      "Maxilla": true,
+      "Mandible": true,
+      "Sphenoid": true,
+      "pituitary gland": true,
+      "appositional growth": false,
+      "interstitial growth": true,
+      "cranial sutures": false
+    }
+  },
+  "You-Forgot-To-SnapYT.App": {
+    "video_name": "You-Forgot-To-SnapYT.App.mp4",
+    "title": "You Forgot To (Anti-aging / Skin Longevity by Siim Land)",
+    "duration_seconds": 678.5,
+    "transcript_char_count": 16227,
+    "transcript_line_count": 251,
+    "transcript_time_s": 96.6,
+    "ocr_char_count": 21651,
+    "ocr_line_count": 375,
+    "ocr_time_s": 146.0,
+    "verification_score_pct": 100.0,
+    "phrase_matches": {
+      "Fibroblast": true,
+      "collagen": true,
+      "microneedling": true,
+      "Retinoid": true,
+      "retinol": true,
+      "tretinoin": true,
+      "exercise": true,
+      "Sun exposure": true,
+      "Red light therapy": true
+    }
+  }
+}

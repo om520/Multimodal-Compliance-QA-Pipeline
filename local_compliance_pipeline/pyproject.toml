@@ -1,0 +1,50 @@
+[project]
+name = "complianceqapipeline"
+version = "0.1.0"
+description = "Local-first multimodal video compliance auditing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # API / serving
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "python-multipart>=0.0.9",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.0",
+
+    # LLM orchestration
+    "langgraph>=0.2.0",
+    "langchain-ollama>=0.2.0",
+
+    # Local vector store
+    "chromadb>=0.5.0",
+
+    # Speech-to-text (replaces Azure Video Indexer transcription)
+    "faster-whisper>=1.0.0",
+
+    # OCR (replaces Azure Video Indexer OCR)
+    "paddlepaddle>=2.6.0,<3.0.0",
+    "paddleocr>=2.7.0",
+
+    # Vision captioning (BLIP)
+    # Keep the BLIP/PaddleOCR stack on the stable APIs used by this project.
+    # Major-version upgrades changed DLL and model-loading behaviour on Windows.
+    "torch>=2.2.0,<2.6.0",
+    "torchvision>=0.17.0,<0.21.0",
+    "transformers>=4.40.0,<5.0.0",
+    "Pillow>=10.0.0",
+
+    # Video handling
+    "opencv-python-headless>=4.9.0,<5.0.0",
+    "yt-dlp>=2024.1.0",
+
+    # Document loading
+    "pypdf>=4.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["backend*", "eval*"]

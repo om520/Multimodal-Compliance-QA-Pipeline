@@ -1,0 +1,30 @@
+{
+  "saved_at": "2026-10-30T00:06:25.604079+00:00",
+  "video_id": "H9Q0KPUsxbM",
+  "video_url": "https://www.youtube.com/watch?v=H9Q0KPUsxbM",
+  "transcript": "",
+  "ocr_text": "",
+  "visual_tags": [],
+  "duration_seconds": 0.0,
+  "retrieved_rules": "",
+  "issues": [],
+  "report": {
+    "video_id": "H9Q0KPUsxbM",
+    "compliance_score": 0,
+    "status": "FAIL",
+    "duration_seconds": 0.0,
+    "total_issues": 0,
+    "issues_by_severity": {
+      "critical": 0,
+      "warning": 0,
+      "info": 0
+    },
+    "issues": [],
+    "summary": "Audit skipped because video processing failed.",
+    "remediation_plan": []
+  },
+  "errors": [
+    "index_video error: In user code:\n\n    File \"tools/export_model.py\", line 187, in <module>\n      main()\n    File \"tools/export_model.py\", line 179, in main\n      sub_model_save_path, logger)\n    File \"tools/export_model.py\", line 106, in export_single_model\n      paddle.jit.save(model, save_path)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/jit.py\", line 629, in wrapper\n      func(layer, path, input_spec, **configs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/decorator.py\", line 232, in fun\n      return caller(func, *(extras + args), **kw)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/wrapped_decorator.py\", line 25, in __impl__\n      return wrapped_func(*args, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/base.py\", line 51, in __impl__\n      return func(*args, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/jit.py\", line 857, in save\n      inner_input_spec, with_hook=with_hook)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/dygraph_to_static/program_translator.py\", line 528, in concrete_program_specify_input_spec\n      *desired_input_spec, with_hook=with_hook)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/dygraph_to_static/program_translator.py\", line 436, in get_concrete_program\n      concrete_program, partial_program_layer = self._program_cache[cache_key]\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/dygraph_to_static/program_translator.py\", line 801, in __getitem__\n      self._caches[item_id] = self._build_once(item)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/dygraph_to_static/program_translator.py\", line 790, in _build_once\n      **cache_key.kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/decorator.py\", line 232, in fun\n      return caller(func, *(extras + args), **kw)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/wrapped_decorator.py\", line 25, in __impl__\n      return wrapped_func(*args, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/base.py\", line 51, in __impl__\n      return func(*args, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/dygraph_to_static/program_translator.py\", line 733, in from_func_spec\n      outputs = static_func(*inputs)\n    File \"/paddle/debug/PaddleOCR/ppocr/modeling/architectures/base_model.py\", line 79, in forward\n      x = self.backbone(x)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py\", line 930, in __call__\n      return self._dygraph_call_func(*inputs, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py\", line 915, in _dygraph_call_func\n      outputs = self.forward(*inputs, **kwargs)\n    File \"/paddle/debug/PaddleOCR/ppocr/modeling/backbones/det_mobilenet_v3.py\", line 146, in forward\n      x = self.conv(x)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py\", line 930, in __call__\n      return self._dygraph_call_func(*inputs, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py\", line 915, in _dygraph_call_func\n      outputs = self.forward(*inputs, **kwargs)\n    File \"/paddle/debug/PaddleOCR/ppocr/modeling/backbones/det_mobilenet_v3.py\", line 179, in forward\n      x = self.conv(x)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py\", line 930, in __call__\n      return self._dygraph_call_func(*inputs, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py\", line 915, in _dygraph_call_func\n      outputs = self.forward(*inputs, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/nn/layer/conv.py\", line 678, in forward\n      use_cudnn=self._use_cudnn)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/nn/functional/conv.py\", line 169, in _conv_nd\n      type=op_type, inputs=inputs, outputs=outputs, attrs=attrs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/layer_helper.py\", line 44, in append_op\n      return self.main_program.current_block().append_op(*args, **kwargs)\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/framework.py\", line 3621, in append_op\n      attrs=kwargs.get(\"attrs\", None))\n    File \"/root/anaconda3/envs/fgd/lib/python3.7/site-packages/paddle/fluid/framework.py\", line 2635, in __init__\n      for frame in traceback.extract_stack():\n\n    NotFoundError: OneDnnContext does not have the input Filter.\n      [Hint: Expected it != inputs_name_.end(), but received it == inputs_name_.end().] (at ..\\paddle\\phi\\backends\\onednn\\onednn_context.cc:345)\n      [operator < fused_conv2d > error]",
+    "retrieve: no video signals available"
+  ]
+}

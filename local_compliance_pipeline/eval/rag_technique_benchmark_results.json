@@ -1,0 +1,37 @@
+{
+  "dense": {
+    "precision_at_5": 0.44,
+    "recall_at_5": 1.0,
+    "faithfulness": 1.0,
+    "groundedness": 0.664,
+    "avg_latency_ms": 1.48
+  },
+  "bm25": {
+    "precision_at_5": 0.5067,
+    "recall_at_5": 0.8667,
+    "faithfulness": 0.9067,
+    "groundedness": 0.6973,
+    "avg_latency_ms": 0.49
+  },
+  "hybrid": {
+    "precision_at_5": 0.4667,
+    "recall_at_5": 1.0,
+    "faithfulness": 1.0,
+    "groundedness": 0.68,
+    "avg_latency_ms": 1.92
+  },
+  "hyde": {
+    "precision_at_5": 0.6133,
+    "recall_at_5": 1.0,
+    "faithfulness": 1.0,
+    "groundedness": 0.768,
+    "avg_latency_ms": 1.6
+  },
+  "hybrid_rerank": {
+    "precision_at_5": 0.9067,
+    "recall_at_5": 1.0,
+    "faithfulness": 1.0,
+    "groundedness": 0.944,
+    "avg_latency_ms": 2.19
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "saved_at": "2026-10-30T00:06:26.926330+00:00",
+  "video_id": "gqrGwjP2fU8",
+  "video_url": "https://www.youtube.com/watch?v=gqrGwjP2fU8",
+  "transcript": "",
+  "ocr_text": "",
+  "visual_tags": [],
+  "duration_seconds": 0.0,
+  "retrieved_rules": "",
+  "issues": [],
+  "report": {
+    "video_id": "gqrGwjP2fU8",
+    "compliance_score": 0,
+    "status": "FAIL",
+    "duration_seconds": 0.0,
+    "total_issues": 0,
+    "issues_by_severity": {
+      "critical": 0,
+      "warning": 0,
+      "info": 0
+    },
+    "issues": [],
+    "summary": "Audit skipped because video processing failed.",
+    "remediation_plan": []
+  },
+  "errors": [
+    "index_video error: tuple index out of range",
+    "retrieve: no video signals available"
+  ]
+}

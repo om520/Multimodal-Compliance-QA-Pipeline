@@ -1,0 +1,375 @@
+[00:00:05] >BrJDermatol.1975Dec,93(6)639-43.doi10.1111/j.1365-2133.1975.tb05113.x
+[00:00:05] The influence of age and sex on skin thickness, skin
+[00:00:05] collagen and density
+[00:00:05] S Shuster, M M Black, E McVitie
+[00:00:05] PMID1220811DOt10.1111/j.1365-2133.1975.tb05113.x
+[00:00:10] You lose about 10% of your skin collagen content per decade after your 20s
+[00:00:10] 2SE
+[00:00:10] (0)
+[00:00:10] (b)
+[00:00:10] 300
+[00:00:10] 200
+[00:00:10] bs/6m)
+[00:00:10] 100
+[00:00:10] 20
+[00:00:10] 40
+[00:00:10] 60
+[00:00:10] 80
+[00:00:10] Age (yeors)
+[00:00:10] F1GURE 1.The relationship of skin collagen content (expressed per unit skin surface arca) to age in
+[00:00:10] is the same in both sexes
+[00:00:10] males (a) and females (b). Females have less collagen than males at all ages but the rate of decrease
+[00:00:15] >Subcell Biochem.2023:103:95-120.doi: 10.1007/978-3-031-26576-1_6
+[00:00:15] Sarcopenia and Ageing
+[00:00:15] Keith Yu-Kin ChengZhengyuan Bao 12Yufeng Long 1.Chaoran Liu Tao Huang Can Cui
+[00:00:15] Simon Kwoon-Ho Chow 1 3Ronald Man Yeung WongWing-Hoi Cheung4
+[00:00:15] Affiliations + expand
+[00:00:15] PMID:37120466DOI10.1007/978-3-031-26576-1_6
+[00:00:30] 74-year-old sedentary m
+[00:00:30] Adipose tis
+[00:00:30] 72-8.doi:10.3810/psm.2011.09.1933
+[00:00:30] serves lean muscle mass in
+[00:00:35] 74-year-old sedentary man
+[00:00:35] 40-year-old triathlete
+[00:00:35] 70-year-old triathlete
+[00:00:40] Adipose tiss
+[00:00:40] Quadriceps
+[00:01:15] WE NEEDTOUNDERSTANDSKIN COLLAGEN
+[00:01:20] How skin structure changes with age
+[00:01:20] Epidermis
+[00:01:20] Collagen fibres
+[00:01:20] Fibroblasts
+[00:01:20] Dermis
+[00:01:20] Elastin
+[00:01:20] Hyaluronic acid
+[00:01:20] +water
+[00:01:20] Subcutaneous
+[00:01:20] fat
+[00:01:20] Younger skin
+[00:01:20] Older skin
+[00:01:25] tat
+[00:01:35] > Am J Pathol. 2006 Jun;168(6):1861-8. doi: 10.2353/ajpath.2006.051302.
+[00:01:35] Decreased collagen production in chronologically
+[00:01:35] aged skin:roles of age-dependent alteration in
+[00:01:35] fibroblast function and defective mechanical
+[00:01:35] stimulation
+[00:01:35] James Varania, Michael K Dame, Laure Rittie, Suzanne E G Fligiel, Sewon Kang, Gary J Fisher,
+[00:01:35] John J Voorhees
+[00:01:35] PMID:16723701PMCID:PMC1606623DOI: 10.2353/ajpath.2006.051302
+[00:01:40] 18-29 Years
+[00:01:40] 1.2
+[00:01:40] FIBROBLASTS
+[00:01:40] 0.9
+[00:01:40] 80+Years
+[00:01:40] 0.6
+[00:01:40] 0.3
+[00:01:40] 0.0
+[00:01:45] .5
+[00:01:45] 18-29Years
+[00:01:50] lative Surface Area
+[00:02:10] MIC
+[00:02:15] Controlled micro-injuries
+[00:02:15] Repair response
+[00:02:15] Collagen remodelling
+[00:02:15] Dermi
+[00:02:20] Microneedling has been seen to
+[00:02:20] increase colla
+[00:02:30] 4 microneedling sessions
+[00:02:30] three weeks apart
+[00:02:30] Fd
+[00:02:35] + daily topical vitamin A & C derivatives
+[00:02:40] > Int J Dermatol. 2015 Dec;54(12):1361-9. doi: 10.1111/ijd.12761. Epub 2015 Jun 20
+[00:02:40] Multiple microneedling sessions for minimally
+[00:02:40] invasive facial rejuvenation:an objective assessment
+[00:02:40] Moetaz El-Domyati , Manal Barakat , Sherif Awad , Walid Medhat , Hasan ElFakahany ,
+[00:02:40] Hanna Farag1
+[00:02:40] PMID: 26096653DOI: 10.1111/ijd.12761
+[00:02:40] 6 microneedling se
+[00:02:45] Baseline
+[00:02:45] 1 month of treatment
+[00:02:45] 3 months of treatment
+[00:02:55] > J Cosmet Dermatol. 2023 Jan;22(1):206-213. doi: 10.1111/jocd.14985. Epub 2022 Jun 2.
+[00:02:55] Efficacy and tolerability of a microneedling device
+[00:02:55] for treating wrinkles on the face
+[00:02:55] Mona Alqam, Christine E Wamsley 2, Thomas M Hitchcock 3, Brian C Jones ,Yucel Akgul 2
+[00:02:55] Jeffrey M Kenkel 4
+[00:02:55] PMID:35403786PMCID:PMC10084046DOI:10.1111/jocd.14985
+[00:03:05] 40%
+[00:03:10] 34%
+[00:03:10] -40%
+[00:03:55] THESECONDWAYTOSTIMULATE
+[00:03:55] COLLAGENIS THROUGHTOPICALRETINO
+[00:04:00] Aged Human Skin
+[00:04:00] Vehicle
+[00:04:00] Topical ROL
+[00:04:00] Keratinocyte
+[00:04:00] Fibroblast
+[00:04:00] Collagenous ECM
+[00:04:00] Endothelial Cell
+[00:04:00] Vascularity
+[00:04:00] TGF-b/CTGF Pathway
+[00:04:00] +CCN1/MMPs
+[00:04:05] Is ECA
+[00:04:05] Endothelial Cel
+[00:04:05] CCN1/MMPs
+[00:04:10] Kenatinocyte
+[00:04:10] oblasts
+[00:04:10] SECN
+[00:04:10] -CCN1/MMPs
+[00:04:15] ous ECN
+[00:04:15] 0.4% retinol
+[00:04:15] seven days
+[00:04:20] Comparative Study> N Engl J Med. 1993 Aug 19;329(8):530-5.
+[00:04:20] doi:10.1056/NEJM199308193290803.
+[00:04:20] Restoration of collagen formation in photodamaged
+[00:04:20] human skin by tretinoin (retinoic acid)
+[00:04:20] C E Griffiths d, A N Russman, G Majmudar, R 5 Singer, T A Hamilton, J J Voorhees
+[00:04:20] PMID: 8336752DOI: 10.1056/NEJM199308193290803
+[00:04:25] Abstract
+[00:04:25] Background:Topical tretinoin (retinoic acid) modifies fine wrinkles and certain other features of
+[00:04:25] human skin damaged by exposure to the sun (photodamage), but histologic changes do not account
+[00:04:25] for this improvement.In mice with photodamage induced by ultraviolet light, effacement of fine
+[00:04:25] wrinkies by tretinoin is correlated with dermal collagen synthesis but not with histologic changes. We
+[00:04:25] investigated whether collagen synthesis was reduced in photodamaged human skin and, if so,
+[00:04:25] whether it could be restored by treatment with topical tretinoin
+[00:04:25] Methods: Biopsies of photodamaged skin from the extensor aspect of the forearm and skin from the
+[00:04:25] buttocks, which had been protected from the sun were performed on 26 healthy subjects. In addition
+[00:04:25] 29 patients with photodamaged skin were treated for 10 to 12 months with a daily application of 0.1
+[00:04:25] percent tretinoin cream (15 patients) or vehicle cream (14 patients). Skin-biopsy specimens obtained
+[00:04:25] at base line and after treatment were assessed immunohistologically for evidence of dermal collagen1
+[00:04:25] formation (collagen synthesis)
+[00:04:25] Results:Collagen I formation was 56 percent less in the papillary dermis of photodamaged skin than
+[00:04:25] in skin protected from the sun (P < 0.001) and was correlated with the clinica severity of
+[00:04:25] photodamage (r =-0.58,P = 0.002).Treatment of photodamaged skin with tretinoin produced an 80
+[00:04:25] percent increase in collagen I formation, as compared with a 14 percent decrease in collagen.
+[00:04:25] formation with the use of vehicle alone (P = 0.006)
+[00:04:25] Conclusions:The formation of collagen Iis significantly decreased in photodamaged human skin.and
+[00:04:25] this process is partly restored by treatment with tretinoin
+[00:04:30] Randomized Controlled Trial>JDrugs Dermatol. 2015 Jan;14(1):24-30
+[00:04:30] A Randomized,Double-blind,Split-face Study
+[00:04:30] Comparing the Efficacy and Tolerability of Three
+[00:04:30] Retinol-based Products vs.Three Tretinoin-based
+[00:04:30] Products in Subjects With Moderate to Severe Facial
+[00:04:30] Photodamage
+[00:04:30] Michael Babcock, Rahul C Mehta, Elizabeth T Makino
+[00:04:30] PMID:25607905
+[00:04:35] Randomized Controlled Trial>Drugs Dermatol.2015 Jan14124-30
+[00:04:35] Michael Babcock, Rahul C Mehta Elizabeth T Makino
+[00:04:35] PMID: 25607905
+[00:04:40] FGURE 8.Ret 0.25% (Subject 031). Subject treated with Ret 0.25% with
+[00:04:40] and b after 12 weeks of use
+[00:04:40] reductions in fine and coarse periocular lines/wrinkles at a) baseline
+[00:04:40] FIGURE 9. Ret 0.5% (Subject 020) Subject treated with Ret 8.5% with
+[00:04:40] fter 12 weeks of use
+[00:04:45] FIGURE 8.Ret 0.25% (Subject 031).Subject treated with Ret 0.25% with
+[00:04:45] and b) after 12 weeks of use.
+[00:04:45] FIGURE 9. Ret 0.5% (Subject 020). Subject treated with Ret 0.5% with
+[00:04:45] FIGURE 18. Ret 1.0% (Subject 036). Subject treated with Rat 1.0%
+[00:04:45] eductions in fine and coarse lines/wrinkdes,mottled pigmentatior
+[00:04:45] skin tone anevenness at a) baseline and b) aftar 12 weeks of sse.
+[00:04:45] after 12 weeks of use
+[00:04:50] FIGURE 8. Ret 0.25% (Subject 031). Subject treated with Ret 0.25% with
+[00:04:50] reductions in fine and coarse lines/wrinkdes, mottled pigmentatior
+[00:04:50] FICURE 18. Ret 1.0% (Subject 036). Subject treated with Ret 1.0%
+[00:04:50] skin tone enevenness, and tactile roughness at a) baseline and b)
+[00:04:50] skin tone unevenness at a) baseline and b) after 12 weaks of use.
+[00:04:50] after 12 weeks of use.
+[00:04:55] FIGURE 9. Ret 0.5% (Subject 020), Subject treated with Ret 0.5% with
+[00:04:55] reductions in fine and coarse lines/wrinkdes, motted pigmentation
+[00:04:55] FIGURE 18. Ret 1.0% (Subject 036), Subject treated with Ret 1.0%
+[00:04:55] skin tone onevenness, and tactile roughness at a) baseline and b)
+[00:04:55] skin tone unewenness at a baselise and b) ater 12 weeks of use
+[00:04:55] aftar 12 weeks of use
+[00:05:10] General differences between different retinoids
+[00:05:10] Retinyl esters: the mildest, weaker evidence for reducing wrinkles
+[00:05:15] Retinyl esters:the mildest, weaker evidence for reducing wrinkles
+[00:05:15] Retinol: practical starting option at 0.1-0.3%
+[00:05:20] Retinal/ retinaldehyde:1 conversion step closer to the active form
+[00:05:25] Tretinoin:active form,strongest evidence for photoaging
+[00:05:25] Discuss starting at O.025% with a dermatologist
+[00:05:30] Discuss starting at 0.025% with a dermatologist
+[00:05:35] Tretinoin:active form, strongest evidence for photoaging
+[00:05:35] Progress gradually: two evenings a w
+[00:05:40] Retinal/ retinaldehvde:1 conversion step closer to the active form
+[00:05:40] Progress gradually: two evenings a week, increase toward every other evening
+[00:05:40] Build consistency before increa
+[00:05:45] Progress gradually: two evenings a week, increase toward every other evening.
+[00:05:45] Build consistency before increasing strength
+[00:05:45] Adjust to your skin: reduce frequency if redness, burning or
+[00:05:50] General differences between different retinoids:
+[00:05:50] Adjust to your skin: reduce frequency if redness, burning or peeling persists.
+[00:05:50] Use moisturizer and daily sunscreen. Give results several
+[00:05:55] Use moisturizer and daily sunscreen. Give results several months.
+[00:05:55] Avoid during pregnancy or when trying to conceive.
+[00:06:10] >Aesthet Surg J.2018 Apr 6;38(5):463-476.doi:10.1093/asj/sjx238
+[00:06:10] Effect of a Facial Muscle Exercise Device on Facial
+[00:06:10] Rejuvenation
+[00:06:10] Ui-Jae HwangOh-Yun KwonSung-Hoon JungSun-Hee Ahn Gyeong-Tae Gwak
+[00:06:10] PMID:29365050PMCID:PMC5888959DOI:10.1093/asj/sjx238
+[00:06:25] Rt ZM: 1.20
+[00:06:40] Review> Aesthet Surg J Open Forum.2025 Nov 4:7:ojaf144. doi: 10.1093/asjof/ojaf144
+[00:06:40] eCollection2025.
+[00:06:40] Efficacy of Conservative Techniques for Mechanical
+[00:06:40] Facial Rejuvenation:A Systematic Review
+[00:06:40] Shaikh Sanjid Seraj, Onyedi Moses. Yasmin Kamel, Aljawhara S H Almishwat, Jemi C Maliyil,
+[00:06:40] Mohamed Dalmar, Ryan Faderani, Afshin Mosahebi
+[00:06:45] A boom in the online popularity of conservative mechanical facial rejuvenation techniques, such as
+[00:06:45] facial exercises,; myofunctional therapy, and manual massages, has proliferated as noninvasive
+[00:06:45] alternatives to aesthetic procedures. Despite this, scientific evidence regarding their efficacy and
+[00:06:45] safety remains unclear. The aim of this study is to determine the efficacy of conservative mechanical
+[00:06:45] facial exercises and related paraphernalia or adjuncts in achieving optimal facial aesthetic outcomes. A
+[00:06:45] systematic review was conducted in accordance with the Preferred Reporting Items for Systematic
+[00:06:45] Reviews and Meta-Analyses guidelines and registered on PROSPERO.Databases including
+[00:06:45] PubMed/MEDLINE, Embase, Web of Science, SciELO, AMED, PROQUEST, Google Scholar, CENTRAL,
+[00:06:45] OVID, and SCOPUS, were searched for studies evaluating mechanical facial exercises in adults. Studies
+[00:06:45] reporting objective and validated subjective facial aesthetic outcomes were included. Risk of bias was
+[00:06:45] assessed using the Cochrane and JBl tools.Twelve studies comprising 321 women aged 30 to 70 met
+[00:06:45] the inclusion criteria.Interventions included facial exercises (n = 6), myofunctional therapy (n = 4), and
+[00:06:45] manual massage (n = 2). Reported improvements were confined to localized regions, such as the
+[00:06:45] cheeks, jawline, and periorbital areas. Tools used included Cutometers (Courage + Khazaka electronic
+[00:06:45] GmbH, Cologne, Germany), ultrasound, expert/self-assessments, and quality-of-life metrics. No
+[00:06:45] adverse events were reported; however, methodological heterogeneity, small sample sizes, and a lack
+[00:06:45] of male participants limited generalizability. Although some region-specific aesthetic improvements
+[00:06:45] have been observed, current evidence remains insufficient to establish the efficacy of these
+[00:06:45] mechanical facial rejuvenation techniques with confidence.The literature lacks standardized protocols
+[00:06:45] that account for hormonal status and facial anatomy variability. Larger, randomized controlled trials
+[00:06:45] with diverse populations are necessary to improve the current body of evidence. Level of Evidence: 3
+[00:06:45] (Therapeutic)
+[00:06:50] facial exercises, myofunctional therapy and manual massages, has proliferated as noninvasive
+[00:06:50] alternatives to aesthetic procedures.Despite this, scientific evidence regarding their efficacy and
+[00:06:50] safety remains unclear.The aim of this study is to determine the efficacy of conservative mechanical
+[00:06:50] facial exercises and related paraphernalia or adjuncts in achieving optimal facial aesthetic outcomes.A
+[00:06:50] Reviews and Meta-Analyses guidelines and registered on PROSPERO.Databases, including
+[00:06:50] PubMed/MEDLINE, Embase,Web of Science,SciELO,AMED,PROQUEST.Google S<holar,CENTRAL
+[00:06:50] OVID,and SCOPUS, were searched for studies evaluating mechanical facial exercises in adults.Studies
+[00:06:50] assessed using the Cochrane and JBI tools.Twelve studies comprising 321 women aged 30 to 70 met
+[00:06:50] the inclusion criteria. Interventions included facial exercises (n = 6), myofunctional therapy (n = 4), and
+[00:06:50] GmbH.Cologne,Germany)ultrasound expert/self-assessments,and quality-of-life metrics.No
+[00:06:50] of male participants limited generalizability.Although some region-specific aesthetic improvements
+[00:06:55] facial exercises, myofunctional therapy, and manual massages, has proliferated as noninvasive
+[00:06:55] altenatives to aesthetic procedures.Despite this, scientific evidence regarding their efficacy and
+[00:06:55] Reviews and Meta-Analyses guidelines and registered on PROSPERO. Databases, including
+[00:06:55] PubMed/MEDLINE, Embase,Web of Science, SciELO, AMED, PROQUEST, Google Scholar, CENTRAL
+[00:06:55] GmbH, Cologne, Germany), ultrasound, expert/self-assessments, and quality-of-life metrics.No
+[00:06:55] have been observed,current evidence remains insufficient to establish the efficacy of these
+[00:06:55] (Therapeutic).
+[00:07:05] > Clin Cosmet InvestigDermatol. 2013 Sep 27:6:221-32. doi: 10.2147/CCID.S44686. eCollection 2013
+[00:07:05] Effect of the sun on visible clinical signs of aging in
+[00:07:05] Caucasian skin
+[00:07:05] Frederic Flament a, Roland Bazin, Sabine Laquieze, Virginie Rubert, Elisa Simonpietri, Bertrand Piot
+[00:07:15] Objective: AGING SIGNS CAN BE CLASSIFIED INTO FOUR MAIN CATEGORIES: wrinkles/texture, lack
+[00:07:15] a lifetime, skin will change in appearance and structure not only because of chronological and intrinsic
+[00:07:15] of firmness of cutaneous tissues (ptosis), vascular disorders, and pigmentation heterogeneities. Duringa
+[00:07:15] processes but ao due to several eal factors such as gavity, sun and ulaviolet eposure, and
+[00:07:15] d tc sTh fft o t fat s to rssive
+[00:07:15] high levels of pollution; or lifestyle factors that have important and obvious effects on sikin aging, such
+[00:07:15] degradations of tegument that appear with different kinetics. The aim of this study was to clinically
+[00:07:15] in terms of increasin the classical signs of aging
+[00:07:15] quantify the effect of sun exposure on facial aging in terms of the appearance of new specific signs or
+[00:07:15] Materials and metheds This study was carried out on 298 Caucasian worm
+[00:07:15] years old. The participants were divided into two groups according to their sun exposure history: 157
+[00:07:15] from 30 years to 78
+[00:07:15] women were characterized as sun-seeking, and the other 141 were classified as sun-phobic. This
+[00:07:15] obsenvations of dlassi crteria wrinkdes, sagging. pigmentation heterogeneities, vascular disorders,
+[00:07:15] Jeenas jo sgeq asp uo sngers jeaapogay o Suipeu5 sSogogruuap /q aiqssod apew sem uosup
+[00:07:15] elastosis, and so on. This work was an opportunity to complete clinical photographic tools by adding
+[00:07:15] investigated by a panel of twelve trained experts to characterize each woman's face regarding
+[00:07:15] in our portfolio new scales for signs observed in the two groups. Thus, 22 clinical parameters were
+[00:07:15] standardized photographic scales, and thus describe the aging process.
+[00:07:15] ptosis, vascular disorders, and pigmentation disorders), and real age and apparent age on the one
+[00:07:15] Results: By calculating statistical correlations between the four clinical clusters (wrinkies/texture
+[00:07:15] aging and the photoaging process. By comparing evaluations of clinical signs between the two
+[00:07:15] hand and heliodermal status on the other hand, we identified a link between each clinical cluster and
+[00:07:15] groups for each 10-year dluster, we demonstrated that whatever the age, a prevalence of
+[00:07:15] pigmentation disorders for the sun-seeking group (e pigmentation) is strongly linked to ultraviolet
+[00:07:15] (UV) exposure.Meanwhile, clinical signs of ptosis are linked more to chronological aging and do not
+[00:07:15] present differences between the two groups, nor, therefore, photoaging. Wrinkdes and texture are
+[00:07:15] with age
+[00:07:15] affected by the two aging processes. Finally, clinical signs of vascular disorders present no evolution
+[00:07:15] Conclusion:Clinical signs of aging are essentially influenced by extrinsic factors, especially sun
+[00:07:15] exposure. Indeed UV exposure seems to be responsible for 80% of visible facial aging sign
+[00:07:20] Mean scores of wrinkles
+[00:07:20] S-P
+[00:07:20] sun-seeking
+[00:07:20] OS-S
+[00:07:20] 1
+[00:07:20] 3039
+[00:07:20] 4049
+[00:07:20] 50-59
+[00:07:20] 6069
+[00:07:20] Age classes (years)
+[00:07:25] 3
+[00:07:25] 2
+[00:07:25] 1.5
+[00:07:25] sun-avoiding
+[00:07:25] OS-P
+[00:07:25] 0.5
+[00:07:25] 5059
+[00:07:25] Age classes (years
+[00:07:25] >70
+[00:08:45] Randomized Controlled Trial>JPhotochem Photobiol B.2007 Jul 27:88(1):51-67.
+[00:08:45] doi: 10.1016/jjphotobiol.2007.04.008. Epub 2007 May 1.
+[00:08:45] A prospective,randomized,placebo-controlled,
+[00:08:45] double-blinded, and split-face clinical study on LED
+[00:08:45] phototherapy for skin rejuvenation:clinical,
+[00:08:45] profilometric, histologic, ultrastructural, and
+[00:08:45] biochemical evaluations and comparison of three
+[00:08:45] different treatment settings
+[00:08:45] Seung Yoon Lee , Ki-Ho Park, Jung-Woo Choi, JungKyun Kwon Doo Rak Lee, Mi Sun Shin
+[00:08:45] Jee Sung Lee, Chung Eui You, Mi Youn Park
+[00:08:45] PMID:17566756DOl:10.1016/jjphotobiol.2007.04.008
+[00:08:50] Randomized Controlled Trial>JPhotochem Photobiol B.2007 Jul 27,88(151-67.
+[00:08:50] Seung Yoon Lee , Ki-Ho Park, Jung-Woo Choi, Jung-Kyun Kwon, Doo Rak Lee, Mi Sun Shin,
+[00:08:50] PMID: 17566756DOI: 10.1016/j.jphotobiol.2007.04.008
+[00:08:50] 76 participants
+[00:08:50] red light /near-infrared light /their combination /sham treatment
+[00:08:50] 2x/week for four weeks
+[00:09:05] Randomized Controlled Trial> Photobiomodul Photomed Laser Surg.2023 Feb;41(2):48-56
+[00:09:05] doi: 10.1089/photob.2022.0114.
+[00:09:05] Photobiomodulation Reduces Periocular Wrinkle
+[00:09:05] Volume by 3o%:A Randomized Controlled Trial
+[00:09:05] Lidiane Rocha MotaIvone da Silva Duarte 2Thais Rodrigues Galache1
+[00:09:05] Katia Maria Dos Santos Pretti1,Orlando Chiarelli Netoa, Lara Jansiski Motta1
+[00:09:05] Anna Carolina Ratto Tempestini Horliana , Daniela de Fatima Teixeira da Silva1, Christiane Pavani 1
+[00:09:05] PMID: 36780572DOI: 10.1089/photob.2022.0114
+[00:09:15] Wrinkle volume
+[00:09:15] 32%-red light
+[00:09:20] Randomized Controlled Trial> Medicine (Baltimore).2025 Feb 14104(7)e41596
+[00:09:20] doi: 10.1097/MD.0000000000041596.
+[00:09:20] Clinical study to evaluate the efficacy and safety of
+[00:09:20] home-used LED and IRED mask for crow's feet: A
+[00:09:20] multi-center,randomized,double-blind,sham-
+[00:09:20] controlled study
+[00:09:20] Sang Hyun ParkSeong Oh Park 2,Jae-A Jung 3
+[00:09:20] PMID: 39960921PMCID: PMC11835066DOI: 10.1097/MD.0000000000041596
+[00:09:30] How red and near-infrared light may support collagen
+[00:09:30] Adaptive
+[00:09:30] Red/near-infrared
+[00:09:30] ROS signals
+[00:09:30] responses
+[00:09:30] light
+[00:09:30] Mitochondrion
+[00:09:30] activity
+[00:09:30] Changes in ATP
+[00:09:30] and celluiar
+[00:09:30] signalling
+[00:09:30] Collage
+[00:09:30] Nitric oxide
+[00:09:35] Transient
+[00:09:35] Collagen
+[00:09:35] remodelling
+[00:09:40] and cellular
+[00:09:40] codegen
+[00:09:50] Proposed
+[00:09:50] Collager
+[00:11:10] %dotdo g oeny   bs do
+[00:11:10] 8558
+[00:11:10] 53
+[00:11:10] 66
+[00:11:10] 350+54g
+[00:11:10] CERALFA
+[00:11:15] ApoB
+[00:11:15] V02MAX
+[00:11:15] ISCERAL FAT
+[00:11:15] 35054g
+[00:11:15] body fat and

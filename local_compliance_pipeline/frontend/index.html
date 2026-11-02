@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Brand Guardian | Local Compliance Audit</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background:#101827; color:#edf2f7; }
+    body { max-width:850px; margin:0 auto; padding:64px 24px; } h1 { margin-bottom:8px; } p { color:#afbdd1; }
+    main { margin-top:32px; padding:28px; background:#182235; border:1px solid #293950; border-radius:16px; }
+    input { box-sizing:border-box; width:100%; padding:13px; border-radius:8px; border:1px solid #475569; background:#0f172a; color:#fff; }
+    button { margin-top:14px; padding:12px 18px; border:0; border-radius:8px; font-weight:700; color:#06101d; background:#75d7b1; cursor:pointer; }
+    .or { text-align:center; margin:24px 0; color:#8ca0bb; } #status { margin-top:22px; } #component-status, #result { white-space:pre-wrap; margin-top:18px; padding:18px; background:#0b1220; border-radius:8px; overflow:auto; } h2 { margin:0; font-size:1.1rem; }
+  </style>
+</head>
+<body>
+  <h1>Brand Guardian</h1><p>Local video compliance checks. Your video is analysed on this computer.</p>
+    <main>
+    <section aria-labelledby="system-title"><h2 id="system-title">System status</h2><p id="system-status">Checking local models and database…</p><pre id="component-status"></pre><button id="refresh-status" type="button">Refresh status</button></section>
+    <form id="url-form"><label for="url">Video path or YouTube link</label><input id="url" type="text" placeholder="https://www.youtube.com/watch?v=... or C:\\video.mp4" required><button>Audit link</button></form>
+    <div class="or">— or choose a video stored on this computer —</div>
+    <form id="file-form"><input id="video" type="file" accept="video/*" required><button>Upload and audit</button></form>
+    <div id="status"></div><article id="result" hidden></article>
+  </main>
+  <script>
+    const status = document.querySelector('#status'), result = document.querySelector('#result');
+    const systemStatus = document.querySelector('#system-status'), componentStatus = document.querySelector('#component-status');
+    const buttons = document.querySelectorAll('button');
+    function setBusy(busy) { buttons.forEach(button => button.disabled = busy); }
+    async function loadComponentStatus() {
+      systemStatus.textContent = 'Checking local models and database…';
+      try {
+        const response = await fetch('/health/components');
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'Status check failed.');
+        systemStatus.textContent = data.overall === 'ready' ? 'Ready for an audit.' : 'Setup is incomplete; see details below.';
+        componentStatus.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        systemStatus.textContent = `Could not check components: ${error.message}`;
+        componentStatus.textContent = '';
+      }
+    }
+    function showAudit(audit) {
+      status.textContent = `Complete — ${audit.status}`;
+      result.hidden = false;
+      const issues = audit.compliance_results || [];
+      const issueText = issues.length
+        ? `\n\nIssues:\n${issues.map(issue => `- [${issue.severity}] ${issue.category}: ${issue.description}`).join('\n')}`
+        : '\n\nNo compliance issues found.';
+      result.textContent = `${audit.final_report}${issueText}`;
+    }
+    async function submitAudit(url, options) {
+      result.hidden = true;
+      status.textContent = 'Analysing video locally… this can take several minutes.';
+      setBusy(true);
+      try {
+        const response = await fetch(url, options);
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.detail || 'Could not start the audit.');
+        showAudit(payload);
+      } catch (error) {
+        status.textContent = `Audit failed: ${error.message}`;
+      } finally { setBusy(false); }
+    }
+    document.querySelector('#url-form').onsubmit = event => { event.preventDefault(); submitAudit('/audit', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({video_url:document.querySelector('#url').value})}); };
+    document.querySelector('#file-form').onsubmit = event => { event.preventDefault(); const body = new FormData(); body.append('video', document.querySelector('#video').files[0]); submitAudit('/audit/upload', {method:'POST', body}); };
+    document.querySelector('#refresh-status').onclick = loadComponentStatus;
+    loadComponentStatus();
+  </script>
+</body>
+</html>

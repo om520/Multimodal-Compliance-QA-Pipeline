@@ -1,0 +1,1687 @@
+{
+  "benchmark_summary": {
+    "retrieval_methods": {
+      "dense": {
+        "name": "Dense HNSW (nomic-embed-text)",
+        "mean_precision_at_5": 0.24,
+        "mean_recall_at_5": 0.74,
+        "mean_mrr": 0.545
+      },
+      "flat_exact": {
+        "name": "Flat Exact k-NN (Brute-Force Cosine)",
+        "mean_precision_at_5": 0.24,
+        "mean_recall_at_5": 0.74,
+        "mean_mrr": 0.545
+      },
+      "sparse": {
+        "name": "Sparse Lexical (Okapi BM25)",
+        "mean_precision_at_5": 0.24,
+        "mean_recall_at_5": 0.7733,
+        "mean_mrr": 0.715
+      },
+      "hybrid_rrf": {
+        "name": "Hybrid RRF (Dense HNSW + BM25)",
+        "mean_precision_at_5": 0.26,
+        "mean_recall_at_5": 0.7733,
+        "mean_mrr": 0.595
+      },
+      "cross_encoder": {
+        "name": "Bi-Encoder + Cross-Encoder (MiniLM)",
+        "mean_precision_at_5": 0.22,
+        "mean_recall_at_5": 0.61,
+        "mean_mrr": 0.3283
+      },
+      "filtered_hybrid": {
+        "name": "Format-Aware Filtered Hybrid",
+        "mean_precision_at_5": 0.28,
+        "mean_recall_at_5": 0.7933,
+        "mean_mrr": 0.7083
+      },
+      "filtered_cross_encoder": {
+        "name": "Format-Filtered + Cross-Encoder (Production)",
+        "mean_precision_at_5": 0.3,
+        "mean_recall_at_5": 0.8933,
+        "mean_mrr": 0.4233
+      }
+    },
+    "audit_comparison": {
+      "baseline_dense": {
+        "precision": 0.35,
+        "recall": 0.8,
+        "f1_score": 0.48,
+        "groundedness": 0.8767,
+        "faithfulness": 0.8767
+      },
+      "format_filtered_hybrid": {
+        "precision": 0.3667,
+        "recall": 0.8,
+        "f1_score": 0.5,
+        "groundedness": 0.7,
+        "faithfulness": 1.0
+      }
+    }
+  },
+  "sample_retrieval_traces": [
+    {
+      "sample_id": "GOLDEN_01",
+      "title": "Miracle Collagen Peptide Serum Review",
+      "expected_rules": [
+        "FTC-RULE-005",
+        "FTC-RULE-001"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "FTC-RULE-001",
+            "FTC-RULE-003",
+            "YT-SPEC-003",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 292.6,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "FTC-RULE-001",
+            "FTC-RULE-003",
+            "YT-SPEC-003",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 282.5,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-005",
+            "YT-SPEC-006",
+            "YT-SPEC-004",
+            "FTC-RULE-002"
+          ],
+          "latency_ms": 1.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.5,
+            "mrr": 1.0
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-005",
+            "FTC-RULE-001",
+            "FTC-RULE-003",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 265.9,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-004",
+            "YT-SPEC-005",
+            "FTC-RULE-004",
+            "YT-SPEC-003"
+          ],
+          "latency_ms": 7456.4,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.5,
+            "mrr": 1.0
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-005",
+            "FTC-RULE-001",
+            "FTC-RULE-003",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 258.0,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-005",
+            "FTC-RULE-004",
+            "YT-SPEC-006",
+            "FTC-RULE-001"
+          ],
+          "latency_ms": 638.2,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_02",
+      "title": "UltraBook Pro 2026 Laptop Unboxing",
+      "expected_rules": [
+        "FTC-RULE-003",
+        "FTC-RULE-004",
+        "FTC-RULE-001"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-005",
+            "YT-SPEC-007",
+            "YT-SPEC-006",
+            "YT-SPEC-001"
+          ],
+          "latency_ms": 270.3,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-005",
+            "YT-SPEC-007",
+            "YT-SPEC-006",
+            "YT-SPEC-001"
+          ],
+          "latency_ms": 297.3,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "FTC-RULE-004",
+            "FTC-RULE-002",
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "YT-SPEC-004"
+          ],
+          "latency_ms": 0.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.3333,
+            "mrr": 1.0
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-005",
+            "YT-SPEC-007",
+            "FTC-RULE-002",
+            "YT-SPEC-003",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 264.2,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.3333,
+            "mrr": 0.2
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-004",
+            "YT-SPEC-005",
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007"
+          ],
+          "latency_ms": 720.0,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-005",
+            "YT-SPEC-007",
+            "FTC-RULE-002",
+            "FTC-RULE-004",
+            "YT-SPEC-001"
+          ],
+          "latency_ms": 267.8,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.3333,
+            "mrr": 0.25
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-005",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-006",
+            "FTC-RULE-001"
+          ],
+          "latency_ms": 660.2,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.3333,
+            "mrr": 0.2
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_03",
+      "title": "Organic Protein Meal Shake Daily Routine",
+      "expected_rules": [
+        "FTC-RULE-002"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "YT-SPEC-001",
+            "YT-SPEC-005",
+            "YT-SPEC-003",
+            "FTC-RULE-005",
+            "FTC-RULE-002"
+          ],
+          "latency_ms": 261.4,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.2
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "YT-SPEC-001",
+            "YT-SPEC-005",
+            "YT-SPEC-003",
+            "FTC-RULE-005",
+            "FTC-RULE-002"
+          ],
+          "latency_ms": 271.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.2
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "YT-SPEC-002",
+            "YT-SPEC-007",
+            "YT-SPEC-001",
+            "FTC-RULE-002",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 0.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.25
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-001",
+            "YT-SPEC-005",
+            "YT-SPEC-002",
+            "FTC-RULE-002",
+            "YT-SPEC-003"
+          ],
+          "latency_ms": 255.3,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.25
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-001",
+            "FTC-RULE-002",
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "FTC-RULE-003"
+          ],
+          "latency_ms": 700.8,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-001",
+            "YT-SPEC-005",
+            "FTC-RULE-002",
+            "YT-SPEC-007",
+            "YT-SPEC-006"
+          ],
+          "latency_ms": 278.7,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.3333
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-001",
+            "FTC-RULE-002",
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "FTC-RULE-003"
+          ],
+          "latency_ms": 593.2,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_04",
+      "title": "GlowUp Energy Drink Shorts Ad",
+      "expected_rules": [
+        "YT-SPEC-004"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 248.1,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.25
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 261.7,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.25
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "FTC-RULE-002",
+            "YT-SPEC-002",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 0.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-003",
+            "FTC-RULE-002",
+            "YT-SPEC-002"
+          ],
+          "latency_ms": 250.1,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "YT-SPEC-003",
+            "FTC-RULE-004",
+            "YT-SPEC-004"
+          ],
+          "latency_ms": 704.9,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.2
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-004",
+            "YT-SPEC-007",
+            "FTC-RULE-002",
+            "YT-SPEC-002",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 240.4,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "FTC-RULE-004",
+            "YT-SPEC-004",
+            "YT-SPEC-001"
+          ],
+          "latency_ms": 657.6,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.25
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_05",
+      "title": "TurboSpeed Wireless Router Bumper Ad",
+      "expected_rules": [
+        "YT-SPEC-003"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-002",
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 201.1,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-002",
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 233.3,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "YT-SPEC-004",
+            "YT-SPEC-005",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-003"
+          ],
+          "latency_ms": 0.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.2
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-004",
+            "YT-SPEC-003",
+            "YT-SPEC-005",
+            "YT-SPEC-007",
+            "YT-SPEC-002"
+          ],
+          "latency_ms": 214.7,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-001",
+            "YT-SPEC-002",
+            "YT-SPEC-004",
+            "YT-SPEC-003",
+            "YT-SPEC-007"
+          ],
+          "latency_ms": 704.1,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.25
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-005",
+            "YT-SPEC-007",
+            "YT-SPEC-002",
+            "YT-SPEC-001"
+          ],
+          "latency_ms": 281.1,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-002",
+            "YT-SPEC-003",
+            "YT-SPEC-007",
+            "FTC-RULE-003",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 616.6,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_06",
+      "title": "Apex SUV Safety & Comfort Non-Skippable Ad",
+      "expected_rules": [
+        "YT-SPEC-002"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-003",
+            "FTC-RULE-003",
+            "YT-SPEC-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 263.0,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-003",
+            "FTC-RULE-003",
+            "YT-SPEC-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 282.7,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "YT-SPEC-004",
+            "FTC-RULE-001",
+            "YT-SPEC-001",
+            "YT-SPEC-003",
+            "YT-SPEC-002"
+          ],
+          "latency_ms": 1.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.2
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-004",
+            "YT-SPEC-003",
+            "YT-SPEC-007",
+            "FTC-RULE-001",
+            "FTC-RULE-003"
+          ],
+          "latency_ms": 251.1,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-001",
+            "YT-SPEC-004",
+            "YT-SPEC-006",
+            "YT-SPEC-003",
+            "YT-SPEC-001"
+          ],
+          "latency_ms": 735.5,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "FTC-RULE-001",
+            "FTC-RULE-003",
+            "YT-SPEC-001",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 256.4,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-001",
+            "YT-SPEC-006",
+            "YT-SPEC-001",
+            "YT-SPEC-002",
+            "YT-SPEC-007"
+          ],
+          "latency_ms": 627.5,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.25
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_07",
+      "title": "SmartHome Automated Thermostat Promo",
+      "expected_rules": [
+        "YT-SPEC-007"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005",
+            "FTC-RULE-003",
+            "YT-SPEC-003"
+          ],
+          "latency_ms": 261.8,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005",
+            "FTC-RULE-003",
+            "YT-SPEC-003"
+          ],
+          "latency_ms": 267.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "YT-SPEC-004",
+            "FTC-RULE-002",
+            "YT-SPEC-002"
+          ],
+          "latency_ms": 1.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005",
+            "FTC-RULE-002",
+            "YT-SPEC-002"
+          ],
+          "latency_ms": 262.2,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-001",
+            "YT-SPEC-004",
+            "YT-SPEC-001",
+            "YT-SPEC-003",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 698.9,
+          "metrics": {
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr": 0.0
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "FTC-RULE-002",
+            "FTC-RULE-003",
+            "YT-SPEC-001"
+          ],
+          "latency_ms": 232.7,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-001",
+            "YT-SPEC-001",
+            "YT-SPEC-005",
+            "FTC-RULE-003",
+            "YT-SPEC-007"
+          ],
+          "latency_ms": 592.9,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr": 0.2
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_08",
+      "title": "GlowSkin Clinical Hydrating Cleanser",
+      "expected_rules": [
+        "FTC-RULE-001",
+        "FTC-RULE-002",
+        "FTC-RULE-005",
+        "YT-SPEC-001",
+        "YT-SPEC-007"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "FTC-RULE-003",
+            "FTC-RULE-005",
+            "FTC-RULE-001",
+            "FTC-RULE-004",
+            "YT-SPEC-004"
+          ],
+          "latency_ms": 327.5,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 0.4,
+            "mrr": 0.5
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "FTC-RULE-003",
+            "FTC-RULE-005",
+            "FTC-RULE-001",
+            "FTC-RULE-004",
+            "YT-SPEC-004"
+          ],
+          "latency_ms": 367.0,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 0.4,
+            "mrr": 0.5
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "FTC-RULE-005",
+            "YT-SPEC-005",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 0.0,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 0.4,
+            "mrr": 1.0
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-004",
+            "YT-SPEC-007",
+            "FTC-RULE-003",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 341.3,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 0.4,
+            "mrr": 1.0
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-004",
+            "YT-SPEC-007",
+            "FTC-RULE-001",
+            "YT-SPEC-003",
+            "FTC-RULE-005"
+          ],
+          "latency_ms": 799.2,
+          "metrics": {
+            "precision_at_k": 0.6,
+            "recall_at_k": 0.6,
+            "mrr": 0.5
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-007",
+            "FTC-RULE-003",
+            "FTC-RULE-004",
+            "FTC-RULE-002"
+          ],
+          "latency_ms": 327.7,
+          "metrics": {
+            "precision_at_k": 0.6,
+            "recall_at_k": 0.6,
+            "mrr": 1.0
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-004",
+            "YT-SPEC-007",
+            "FTC-RULE-001",
+            "FTC-RULE-005",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 636.1,
+          "metrics": {
+            "precision_at_k": 0.6,
+            "recall_at_k": 0.6,
+            "mrr": 0.5
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_09",
+      "title": "FreshBrew Espresso Machine 5s Bumper",
+      "expected_rules": [
+        "YT-SPEC-003",
+        "YT-SPEC-007"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "FTC-RULE-003"
+          ],
+          "latency_ms": 237.2,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "FTC-RULE-003"
+          ],
+          "latency_ms": 251.8,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-007",
+            "YT-SPEC-001",
+            "YT-SPEC-002",
+            "YT-SPEC-006"
+          ],
+          "latency_ms": 0.0,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "YT-SPEC-002"
+          ],
+          "latency_ms": 222.2,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-002",
+            "YT-SPEC-006",
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007"
+          ],
+          "latency_ms": 704.1,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.3333
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007",
+            "YT-SPEC-005",
+            "YT-SPEC-002"
+          ],
+          "latency_ms": 221.8,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "YT-SPEC-002",
+            "YT-SPEC-006",
+            "YT-SPEC-003",
+            "YT-SPEC-001",
+            "YT-SPEC-007"
+          ],
+          "latency_ms": 675.6,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.3333
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_10",
+      "title": "CryptoYield Bot High Return Endorsement",
+      "expected_rules": [
+        "FTC-RULE-005",
+        "FTC-RULE-001"
+      ],
+      "method_results": {
+        "dense": {
+          "retrieved_ids": [
+            "FTC-RULE-003",
+            "FTC-RULE-001",
+            "YT-SPEC-007",
+            "FTC-RULE-004",
+            "FTC-RULE-005"
+          ],
+          "latency_ms": 267.1,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "flat_exact": {
+          "retrieved_ids": [
+            "FTC-RULE-003",
+            "FTC-RULE-001",
+            "YT-SPEC-007",
+            "FTC-RULE-004",
+            "FTC-RULE-005"
+          ],
+          "latency_ms": 308.6,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "sparse": {
+          "retrieved_ids": [
+            "FTC-RULE-005",
+            "YT-SPEC-007",
+            "YT-SPEC-004",
+            "YT-SPEC-005",
+            "FTC-RULE-004"
+          ],
+          "latency_ms": 0.0,
+          "metrics": {
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.5,
+            "mrr": 1.0
+          }
+        },
+        "hybrid_rrf": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "FTC-RULE-005",
+            "FTC-RULE-001",
+            "FTC-RULE-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 251.4,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-004",
+            "FTC-RULE-001",
+            "YT-SPEC-007",
+            "FTC-RULE-005",
+            "YT-SPEC-003"
+          ],
+          "latency_ms": 734.1,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "filtered_hybrid": {
+          "retrieved_ids": [
+            "YT-SPEC-007",
+            "FTC-RULE-005",
+            "FTC-RULE-001",
+            "FTC-RULE-004",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 260.2,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        },
+        "filtered_cross_encoder": {
+          "retrieved_ids": [
+            "FTC-RULE-004",
+            "FTC-RULE-001",
+            "YT-SPEC-007",
+            "FTC-RULE-005",
+            "YT-SPEC-005"
+          ],
+          "latency_ms": 562.6,
+          "metrics": {
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr": 0.5
+          }
+        }
+      }
+    }
+  ],
+  "sample_audit_eval_traces": [
+    {
+      "sample_id": "GOLDEN_01",
+      "title": "Miracle Collagen Peptide Serum Review",
+      "is_violation": true,
+      "dense_audit": {
+        "issues": [
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The ad does not prominently disclose the material connection with the sponsor before the consumer makes a purchasing decision.",
+            "timestamp": "00:00:35",
+            "remediation": "Disclose the sponsorship at the beginning of the ad, e.g., 'Thanks to the sponsor for sending this over.'"
+          },
+          {
+            "category": "FTC Truthfulness & Scientific Claim Substantiation",
+            "severity": "critical",
+            "description": "The ad makes unproven and exaggerated claims about the product's efficacy, such as 'clinically proven to permanently reverse cellular aging' and '100% CURE FOR WRINKLES IN 48 HOURS'.",
+            "timestamp": "00:00:05",
+            "remediation": "Provide evidence of clinical trials or substantiate the claims with credible scientific data."
+          },
+          {
+            "category": "Ad Spec",
+            "severity": "critical",
+            "description": "The ad duration exceeds the 6.0 seconds maximum allowed by YouTube's bumper ad specifications.",
+            "timestamp": null,
+            "remediation": "Reduce the ad duration to 6.0 seconds or less."
+          },
+          {
+            "category": "FTC Disclosure Timing & Placement",
+            "severity": "critical",
+            "description": "The disclosure of the material connection is placed at the end of the ad, which is not in compliance with the requirement to place it prominently with the endorsement itself.",
+            "timestamp": "00:00:35",
+            "remediation": "Place the disclosure at the beginning of the ad, e.g., 'Thanks to the sponsor for sending this over.'"
+          },
+          {
+            "category": "FTC Disclosure Timing & Placement",
+            "severity": "critical",
+            "description": "The disclosure of the material connection is placed at the end of the ad, which is not in compliance with the requirement to place it prominently with the endorsement itself.",
+            "timestamp": "00:00:35",
+            "remediation": "Place the disclosure at the beginning of the ad, e.g., 'Thanks to the sponsor for sending this over.'"
+          },
+          {
+            "category": "Call-to-Action (CTA) & Text Overlay Guidelines",
+            "severity": "warning",
+            "description": "The text overlay 'Link in bio for 20% off' is placed in the bottom right corner, which may clash with the bottom-left ad badge and is not legible on smartphone screens.",
+            "timestamp": "00:00:38",
+            "remediation": "Move the text overlay to a more prominent and legible location, e.g., the top center or middle center."
+          }
+        ],
+        "metrics": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6667,
+          "groundedness": 0.8333,
+          "faithfulness": 0.8333,
+          "detected_count": 6,
+          "expected_violations": 2
+        }
+      },
+      "filtered_audit": {
+        "issues": [
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The disclosure is placed at the end of the video, which is prohibited. It should be placed prominently with the endorsement itself.",
+            "timestamp": "00:00:35",
+            "remediation": "Place the disclosure at the beginning or during the review, not at the end."
+          },
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The influencer did not disclose the financial tie with the brand, which is required.",
+            "timestamp": null,
+            "remediation": "Clearly disclose the sponsorship at the beginning of the video."
+          },
+          {
+            "category": "FTC Scientific Claim Substantiation",
+            "severity": "critical",
+            "description": "The ad makes a scientific claim that the product 'clinically proven to permanently reverse cellular aging and eliminate all forehead wrinkles in 48 hours without any clinical trials or diet changes' without rigorous proof.",
+            "timestamp": "00:00:05",
+            "remediation": "Provide evidence of clinical trials or other rigorous proof supporting the claims."
+          },
+          {
+            "category": "FTC Scientific Claim Substantiation",
+            "severity": "critical",
+            "description": "The ad makes a medical claim that the product 'completely cures dermal senescence' without rigorous proof.",
+            "timestamp": "00:00:18",
+            "remediation": "Provide evidence of medical studies or other rigorous proof supporting the claims."
+          },
+          {
+            "category": "YouTube Ad Spec",
+            "severity": "warning",
+            "description": "The ad duration is 42 seconds, which is longer than the recommended 15-20 seconds.",
+            "timestamp": null,
+            "remediation": "Consider shortening the ad to 15-20 seconds to comply with the recommended duration."
+          },
+          {
+            "category": "FTC Approved vs Prohibited Terminology",
+            "severity": "critical",
+            "description": "The on-screen text uses the term '100% CURE FOR WRINKLES IN 48 HOURS', which is a prohibited term and should be replaced with an approved term.",
+            "timestamp": "00:00:07",
+            "remediation": "Replace the term with an approved term such as '#ad' or 'advertisement'."
+          }
+        ],
+        "metrics": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6667,
+          "groundedness": 0.6667,
+          "faithfulness": 1.0,
+          "detected_count": 6,
+          "expected_violations": 2
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_04",
+      "title": "GlowUp Energy Drink Shorts Ad",
+      "is_violation": true,
+      "dense_audit": {
+        "issues": [
+          {
+            "category": "Ad Spec",
+            "severity": "CRITICAL",
+            "description": "The video duration exceeds the 6.0 seconds maximum allowed for non-skippable YouTube Bumper Ads.",
+            "timestamp": null,
+            "remediation": "Shorten the video to 6.0 seconds or less."
+          },
+          {
+            "category": "FTC Disclosure",
+            "severity": "CRITICAL",
+            "description": "The #ad tag is not visible within the first 5 seconds, as required by the FTC guidelines.",
+            "timestamp": "00:00:24",
+            "remediation": "Ensure the #ad tag is visible within the first 5 seconds of the video."
+          },
+          {
+            "category": "Ad Spec",
+            "severity": "WARNING",
+            "description": "The on-screen text 'Tap Shop button below' does not comply with the CTA requirements, as it exceeds the 10-character limit.",
+            "timestamp": "00:00:22",
+            "remediation": "Shorten the CTA to 10 characters or less."
+          },
+          {
+            "category": "Ad Spec",
+            "severity": "WARNING",
+            "description": "The on-screen text 'CLEAN ENERGY THAT LASTS' and 'ZERO CRASH - ZERO SUGAR' do not have high visual contrast against the moving video background.",
+            "timestamp": "00:00:02, 00:00:15",
+            "remediation": "Ensure the text has high visual contrast against the background."
+          }
+        ],
+        "metrics": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6667,
+          "groundedness": 0.75,
+          "faithfulness": 0.75,
+          "detected_count": 4,
+          "expected_violations": 1
+        }
+      },
+      "filtered_audit": {
+        "issues": [
+          {
+            "category": "Ad Spec",
+            "severity": "critical",
+            "description": "The ad duration is 28 seconds, which exceeds the maximum allowed duration of 60 seconds.",
+            "timestamp": null,
+            "remediation": "Reduce the ad duration to within the 10-60 second range, ideally 10-30 seconds."
+          },
+          {
+            "category": "Ad Spec",
+            "severity": "critical",
+            "description": "The text overlay 'Tap Shop button below' is placed in the bottom 20% of the video, which is a safe zone and should be avoided.",
+            "timestamp": "00:00:22",
+            "remediation": "Move the text overlay to a non-safe zone, ensuring it does not cover the bottom 20% of the video."
+          },
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The ad contains a claim that the product 'GlowUp' provides a 'zero crash' effect, which may be a health claim without rigorous proof.",
+            "timestamp": "00:00:08",
+            "remediation": "Ensure the claim is substantiated by personal experience or scientific evidence, or remove the claim if not supported."
+          }
+        ],
+        "metrics": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6667,
+          "groundedness": 0.6667,
+          "faithfulness": 1.0,
+          "detected_count": 3,
+          "expected_violations": 1
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_05",
+      "title": "TurboSpeed Wireless Router Bumper Ad",
+      "is_violation": true,
+      "dense_audit": {
+        "issues": [
+          {
+            "category": "Ad Spec",
+            "severity": "critical",
+            "description": "The ad duration of 7.8 seconds exceeds the maximum allowed duration of 7 seconds for non-skippable in-stream ads.",
+            "timestamp": "00:00:00",
+            "remediation": "Reduce the ad duration to 7 seconds or less."
+          },
+          {
+            "category": "Brand Safety",
+            "severity": "critical",
+            "description": "The text 'AVAILABLE AT BEST BUY' appears in the bottom 20% of the screen, which is a critical safe zone and may be covered by the ad badge.",
+            "timestamp": "00:00:06",
+            "remediation": "Move the text to a non-critical safe zone, such as the top 85% of the screen."
+          }
+        ],
+        "metrics": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6667,
+          "groundedness": 1.0,
+          "faithfulness": 1.0,
+          "detected_count": 2,
+          "expected_violations": 1
+        }
+      },
+      "filtered_audit": {
+        "issues": [
+          {
+            "category": "Ad Spec",
+            "severity": "CRITICAL",
+            "description": "The ad duration is 7.8 seconds, which exceeds the 6.0-second maximum limit for YouTube Bumper Ads.",
+            "timestamp": "00:00:00",
+            "remediation": "Reduce the ad duration to 6.0 seconds or less."
+          },
+          {
+            "category": "Ad Spec",
+            "severity": "CRITICAL",
+            "description": "The ad duration is 7.8 seconds, which exceeds the 15-second maximum limit for Non-Skippable In-Stream Ads.",
+            "timestamp": "00:00:00",
+            "remediation": "Reduce the ad duration to 15 seconds or less."
+          },
+          {
+            "category": "FTC Disclosure",
+            "severity": "CRITICAL",
+            "description": "The ad does not include a disclosure that it is sponsored content. The disclosure is only present in the video description and not in the video itself.",
+            "timestamp": null,
+            "remediation": "Ensure the disclosure 'Sponsored' or similar is visible in the video content, both in spoken audio and on-screen text."
+          }
+        ],
+        "metrics": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6667,
+          "groundedness": 0.6667,
+          "faithfulness": 1.0,
+          "detected_count": 3,
+          "expected_violations": 1
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_08",
+      "title": "GlowSkin Clinical Hydrating Cleanser",
+      "is_violation": false,
+      "dense_audit": {
+        "issues": [
+          {
+            "category": "FTC Disclosure Timing & Placement",
+            "severity": "critical",
+            "description": "The disclosure is placed at the beginning of the video, but the scientific claim is made after the disclosure, which could mislead viewers.",
+            "timestamp": "00:00:08",
+            "remediation": "Ensure all claims are made before the disclosure."
+          },
+          {
+            "category": "FTC Truthfulness & Scientific Claim Substantiation",
+            "severity": "critical",
+            "description": "The influencer claims a 92% success rate based on a consumer perception study, which is a scientific claim without rigorous proof.",
+            "timestamp": "00:00:25",
+            "remediation": "Provide evidence of the study or remove the claim."
+          },
+          {
+            "category": "FTC Material Connection Disclosure",
+            "severity": "critical",
+            "description": "The influencer does not disclose the financial partnership with GlowSkin in the on-screen text, which is required.",
+            "timestamp": "00:00:02",
+            "remediation": "Add '#ad Paid partnership with GlowSkin' to the on-screen text."
+          },
+          {
+            "category": "FTC Approved vs Prohibited Terminology",
+            "severity": "critical",
+            "description": "The on-screen text uses 'GLOWSKIN CLINICAL HYDRATING CLEANSER' without the approved hashtag '#ad'.",
+            "timestamp": "00:00:12",
+            "remediation": "Replace 'GLOWSKIN CLINICAL HYDRATING CLEANSER' with '#ad GLOWSKIN CLINICAL HYDRATING CLEANSER'."
+          },
+          {
+            "category": "YouTube Shorts Ads & Vertical Safe Zones",
+            "severity": "critical",
+            "description": "The call-to-action 'Shop Now' is placed in the right 15% edge, which is a safe zone and could be obscured by the Like/Comment icons.",
+            "timestamp": "00:00:42",
+            "remediation": "Move the call-to-action to a non-safe zone, such as the middle of the screen."
+          }
+        ],
+        "metrics": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "groundedness": 1.0,
+          "faithfulness": 1.0,
+          "detected_count": 5,
+          "expected_violations": 0
+        }
+      },
+      "filtered_audit": {
+        "issues": [
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The disclosure is not placed prominently with the endorsement itself. The #ad banner is placed 2 seconds after the spoken disclosure.",
+            "timestamp": null,
+            "remediation": "Ensure the #ad disclosure is placed immediately after the spoken disclosure."
+          },
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The scientific claim is not substantiated by competent and rigorous proof. The claim of 92% reported smoother skin is based on a consumer perception study, which may not be rigorous enough.",
+            "timestamp": "00:00:35",
+            "remediation": "Provide evidence of rigorous scientific studies or clinical trials supporting the claim."
+          },
+          {
+            "category": "FTC Approved vs Prohibited Terminology",
+            "severity": "critical",
+            "description": "The hashtag #ad is used, but it is not immediately followed by the full disclosure. The full disclosure is only visible after the spoken #ad.",
+            "timestamp": null,
+            "remediation": "Ensure the full disclosure is visible immediately after the spoken #ad."
+          },
+          {
+            "category": "FTC Disclosure Timing & Placement",
+            "severity": "critical",
+            "description": "The disclosure is placed only at the very end of the video, which is prohibited. The disclosure should be placed prominently with the endorsement itself.",
+            "timestamp": "00:00:40",
+            "remediation": "Place the #ad disclosure immediately after the spoken #ad."
+          },
+          {
+            "category": "YouTube Ad Specs",
+            "severity": "warning",
+            "description": "The video duration is 45 seconds, which is longer than the recommended 15-20 seconds.",
+            "timestamp": null,
+            "remediation": "Consider shortening the video to the recommended duration."
+          },
+          {
+            "category": "Call-to-Action & Text Overlay Guidelines",
+            "severity": "warning",
+            "description": "The CTA 'Shop Now' is 8 characters, which is within the limit but may be too short for clarity. It is also placed in the upper-right safe zone, which is acceptable.",
+            "timestamp": "00:00:42",
+            "remediation": "Ensure the CTA is clear and consider adding more descriptive text if necessary."
+          }
+        ],
+        "metrics": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "groundedness": 0.5,
+          "faithfulness": 1.0,
+          "detected_count": 6,
+          "expected_violations": 0
+        }
+      }
+    },
+    {
+      "sample_id": "GOLDEN_10",
+      "title": "CryptoYield Bot High Return Endorsement",
+      "is_violation": true,
+      "dense_audit": {
+        "issues": [
+          {
+            "category": "FTC Disclosure Timing & Placement",
+            "severity": "critical",
+            "description": "The disclosure is placed at the end of the video, after the claims are made.",
+            "timestamp": "00:00:35",
+            "remediation": "Place the disclosure at the beginning of the video, before any claims are made."
+          },
+          {
+            "category": "FTC Material Connection Disclosure",
+            "severity": "critical",
+            "description": "The creator does not disclose the financial tie with the brand until the end of the video.",
+            "timestamp": "00:00:08",
+            "remediation": "Disclose the financial tie immediately after the 'Guys, I was paid to talk about this' statement."
+          },
+          {
+            "category": "FTC Approved vs Prohibited Terminology",
+            "severity": "critical",
+            "description": "The hashtag #ad is used, but it is not prominently displayed and is buried in the text.",
+            "timestamp": "00:00:02",
+            "remediation": "Ensure the hashtag #ad is prominently displayed and not buried in the text."
+          },
+          {
+            "category": "FTC Truthfulness & Scientific Claim Substantiation",
+            "severity": "critical",
+            "description": "The claim of a 500% monthly return with zero risk is made without personal experience or scientific substantiation.",
+            "timestamp": "00:00:20",
+            "remediation": "Provide personal experience or scientific substantiation for the claims made."
+          },
+          {
+            "category": "Ad Spec",
+            "severity": "critical",
+            "description": "The video duration is 50.0 seconds, which exceeds the 6.0 seconds hard limit.",
+            "timestamp": null,
+            "remediation": "Reduce the video duration to 6.0 seconds or less."
+          }
+        ],
+        "metrics": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1_score": 0.4,
+          "groundedness": 0.8,
+          "faithfulness": 0.8,
+          "detected_count": 5,
+          "expected_violations": 1
+        }
+      },
+      "filtered_audit": {
+        "issues": [
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The disclosure is not placed prominently with the endorsement itself. It appears after the creator has made claims about the product's performance.",
+            "timestamp": "00:00:08",
+            "remediation": "Place the disclosure immediately after the first mention of the product and before any claims about its performance."
+          },
+          {
+            "category": "FTC Disclosure",
+            "severity": "critical",
+            "description": "The disclosure is not placed before consumers make purchasing decisions. The creator makes claims about the product's performance before the disclosure.",
+            "timestamp": "00:00:20",
+            "remediation": "Ensure the disclosure is placed before any claims about the product's performance."
+          },
+          {
+            "category": "FTC Truthfulness & Scientific Claim Substantiation",
+            "severity": "critical",
+            "description": "The creator makes a scientific claim about the product's performance (500% monthly return with zero risk) without personal experience or scientific substantiation.",
+            "timestamp": "00:00:20",
+            "remediation": "Provide personal experience or scientific substantiation for the claims made about the product's performance."
+          },
+          {
+            "category": "FTC Material Connection Disclosure",
+            "severity": "critical",
+            "description": "The creator has a financial tie with the brand but does not disclose this relationship.",
+            "timestamp": "00:00:00",
+            "remediation": "Clearly disclose the financial tie with the brand at the beginning of the video."
+          },
+          {
+            "category": "Ad Spec",
+            "severity": "warning",
+            "description": "The on-screen text 'CRYPTOYIELD AI TRADING BOT' does not match the approved disclosure term '#ad'.",
+            "timestamp": "00:00:10",
+            "remediation": "Replace 'CRYPTOYIELD AI TRADING BOT' with '#ad' or 'advertisement' to comply with approved terminology."
+          }
+        ],
+        "metrics": {
+          "precision": 0.3333,
+          "recall": 1.0,
+          "f1_score": 0.5,
+          "groundedness": 1.0,
+          "faithfulness": 1.0,
+          "detected_count": 5,
+          "expected_violations": 1
+        }
+      }
+    }
+  ]
+}
